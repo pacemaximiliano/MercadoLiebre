@@ -1,0 +1,88 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    background-color: white;
+}
+
+.create-user-form{
+    background-color: #ebebeb;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 50px 25px;
+    font-size: 15px;
+    border: solid white 1px;
+    border-radius: 10px;
+    padding: 15px;
+}
+.control-form{
+    margin: 15px 0px;
+}
+.control-form label{
+    font-weight: 900;
+}
+.control-form input{
+    margin: 10px 0px 0px 4px;
+    border: solid 0.5px white;
+    border-radius: 5px;
+    height: 25px;
+    width: 100%;
+}
+.profile input{
+    height: auto;
+    width: auto;
+}
+.profile span{
+    margin-left: 5px;
+}
+.categories{
+    border: solid 0.5px black;
+    width: 200px;
+    border-radius: 6px;
+    padding: 10px 0px;
+    margin-top: 5px;
+}
+.categories input{
+    margin-top:10px;
+    margin-left: 10px;
+    height: auto;
+    width: auto;
+}
+.categories span{
+    margin-left: 5px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center; 
+}
+.buttons button{
+    margin : 5px 15px 0px 15px;
+    border: none;
+    background-color: #03264C;
+    color: white;
+    font-weight: 900;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+
+/*DESKTOP + TABLET*/
+@media(min-width:760px){
+    .create-user-form{
+        max-width: 800px;
+        text-align: center;
+        align-items: center;
+        margin: 50px auto;
+        }
+    .control-form input{
+        max-width: 629px;
+    }
+}
+
+
+

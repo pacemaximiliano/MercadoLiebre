@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Liebre - Register</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/styles-register.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ac12a4126f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header-container">
+        <div class="header-top">
+            <img src="/images/logo-mercado-liebre.svg" class="img-logo">
+            <ul class="header-search-bar">
+                <li><input type="search" name="search-bar" id="search-bar" placeholder="Buscar productos, marcas"></li>
+                <li><i class="fa-solid fa-magnifying-glass icon-search"></i></li>
+            </ul>
+            <h2 class="text-header">
+                <i class="fa-solid fa-hand-holding-dollar"></i>
+                Comprá en cuotas y sin tarjeta de crédito
+            </h2>
+        </div>
+
+        <div class="bars-menu">
+        <a href="#" class="menu-bars-icon icon-bars"><i class="fa-solid fa-bars"></i></a>
+        </div>
+
+        <nav class="navbar">
+            <ul class="lef-navbar">
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+            <ul class="right-navbar">
+                <li><a href="/views/register">Creá tu cuenta<i class="fa-solid fa-credit-card"></i></a></li>
+                <li><a href="/views/register">Ingresa<i class="fa-solid fa-right-to-bracket"></i></a></li>
+                <li><a href="#">Mis compras<i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form action="/create-user" method="post" class="create-user-form">
+            <div class="control-form">
+                <label for="name">Nombre y apellido</label>
+                <p><input type="text" name="name" id="name" required minlength="10"></p>
+            </div>
+            <div class="control-form">
+                <label for="username">Nombre de usuari@</label>
+                <p><input type="text" name="username" id="username" required minlength="5"></p>
+            </div>
+            <div class="control-form">
+                <label>Fecha de nacimiento</label>
+                <p><input type="date" name="birth-date"></p>
+            </div>
+            <div class="control-form">
+                <label for="addres">Domicilio</label>
+                <p><input type="text" name="addres" id="addres"></p>
+            </div>
+            <div class="control-form">
+                <label>Perfil</label>
+                <div class="profile">
+                    <input type="radio" name="profile" value="buyer"><span>Comprador</span>
+                    <input type="radio" name="profile" value="seller"><span>Vendedor</span>
+                </div>
+            </div>
+            <div class="control-form">
+                <label>Categorías de interés</label>
+                <p><div class="categories">
+                    <p><input type="checkbox" name="electro" value="electro"><span>Electro</span></p>
+                    <p><input type="checkbox" name="moda" value="moda"><span>Moda</span></p>
+                    <p><input type="checkbox" name="home" value="hogar"><span>Hogar</span></p>
+                    <p><input type="checkbox" name="toy" value="jugueteria"><span>Juguetería</span></p>
+                    <p><input type="checkbox" name="healtcare" value="vida-sana"><span>Vida sana</span></p>
+                </div></p>
+            </div>
+            <div class="control-form">
+                <label>Foto de perfil</label>
+                <p><input type="file" name="profile-img" accept=".jpg"></p>
+            </div>
+            <div class="control-form">
+                <label for="pass">Contraseña</label>
+                <p><input type="password" name="pass" id="pass" required minlength="12"></p>
+            </div>
+            <div class="control-form">
+                <label for="confirm-pass">Confirmar contraseña</label>
+                <p><input type="password" name="confirm-pass" id="confirm-pass" required minlength="12"></p>
+            </div>
+        </form>
+        <div class="buttons">
+            <button type="submit">ENVIAR</button>
+            <button type="reset">BORRAR</button>
+        </div>
+    </main>
+    
+    <footer>
+        <h4 class="footer-bottom">Copyright © 1999-2020 MercadoLiebre S.R.L.</h4>
+    </footer>
+</body>
+</html>

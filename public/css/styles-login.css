@@ -1,0 +1,43 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    background-color: white;
+}
+.login-form{
+    background-color: #ebebeb;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 50px 25px;
+    font-size: 15px;
+    border: solid white 1px;
+    border-radius: 10px;
+    padding: 15px;
+}
+.control-form{
+    margin: 15px 0px;
+}
+.buttons{
+    display: flex;
+    justify-content: center
+}
+.buttons button{
+    border: none;
+    background-color: #03264C;
+    color: white;
+    font-weight: 900;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+
+/*DESKTOP + TABLET*/
+@media(min-width:360px){
+    .login-form{
+    max-width: 800px;
+    }
+}
