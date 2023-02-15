@@ -32,8 +32,11 @@ Descripciones: 16px
 }
 .img-logo{
     display: block;
-    margin: 20px 0px 30px 0px;
+    margin: 15px 0px;
     max-width: 150px;
+}
+.login-form{
+    margin: 20px 0px;
 }
 .header-search-bar{
     align-self: center;
@@ -52,12 +55,18 @@ Descripciones: 16px
     border:white;
     font-size: 12px;
 }
+.header-search-bar button{
+    background-color: white;
+    border:0px;
+}
 .text-header{
+    margin: 15px 10px 0px 10px;
     color:#666666;
     font-size: 14px;
 }
 .text-header i{
     color: black;
+    margin-right: 5px;
 }
 .bars-menu{
     margin-top: 40px;
@@ -92,7 +101,7 @@ main{
 .last-visit-container,
 .offers-container{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     padding: 15px 10px 15px 10px;
 }
 .last-visit-container h2,
@@ -108,6 +117,9 @@ main{
 .main-article{
     background-color: white;
     margin-bottom: 10px;
+}
+.main-article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 .article-details{
     display: flex;
@@ -132,11 +144,19 @@ main{
     top: -25px;
     color : #39b54a;
 }
+.article-icon:hover{
+    transition: 1000ms;
+    transform: rotate(-90deg);
+}
 .article-price{
     width: 50%;
 }
-
-
+.article-description{
+    display: none;
+}
+.main-article:hover .article-description{
+    display:block;
+}
 
 /*FOOTER*/
 .footer{
@@ -164,12 +184,68 @@ main{
 }
 
 
-/*TABLET*/
-@media(min-width:360px){
+/*DESKTOP*/
+@media(min-width:850px){
+    .bars-menu{
+        display: none;
+    }
+
+    /*NAV BAR*/
+    .navbar{
+        display: flex;
+        justify-content: space-around;
+        font-size : 20px;
+        height: 40px;
+    }
+    .navbar li{
+        list-style-type: none;
+        display: inline;
+        flex-wrap: wrap
+    }
+    .navbar a{
+        text-decoration: none;
+        color :rgb(100, 100, 100);
+        margin: 0 5px;
+        }
+    .navbar i{
+        margin-left: 5px;
+    }
 }
 
 
-/*DESKTOP*/
-@media(min-width:769px){
+/*TABLET*/
+@media(min-width:600px){
+    
+    .login-form{
+        width: 33%;
+    }
+    .text-header{
+        align-self: center;
+        font-size: 18px;
+        width: 33%;
+    }
+    .last-visit-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .main-products{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .main-article{
+        max-width: 500px;
+        margin: 15px;
+    }
+
+    /*FOOTER*/
+    .footer{
+        display: flex;
+        flex-direction: row;
+        margin: 0px 20px;
+    }
+    .icon-footer:hover{
+        color:green;
+    }
 
 }

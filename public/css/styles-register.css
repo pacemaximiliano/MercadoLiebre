@@ -71,16 +71,25 @@ main{
 }
 
 
-/*DESKTOP + TABLET*/
+/*DESKTOP*/
 @media(min-width:760px){
     .create-user-form{
         max-width: 800px;
         text-align: center;
         align-items: center;
         margin: 50px auto;
+        display: block;
         }
     .control-form input{
-        max-width: 629px;
+        max-width: 650px;
+    }
+    .categories{
+        text-align: center;
+        width: 200px;
+        margin: 10px auto;
+    }
+    .input-file{
+        width: 400px;
     }
 }
 

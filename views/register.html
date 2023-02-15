@@ -32,14 +32,14 @@
 
         <nav class="navbar">
             <ul class="lef-navbar">
-                <li><a href="#">Ofertas</a></li>
+                <li><a href="/">Ofertas</a></li>
                 <li><a href="#">Tiendas oficiales</a></li>
                 <li><a href="#">Vender</a></li>
                 <li><a href="#">Ayuda</a></li>
             </ul>
             <ul class="right-navbar">
-                <li><a href="/views/register">Creá tu cuenta<i class="fa-solid fa-credit-card"></i></a></li>
-                <li><a href="/views/register">Ingresa<i class="fa-solid fa-right-to-bracket"></i></a></li>
+                <li><a href="/register">Creá tu cuenta<i class="fa-solid fa-credit-card"></i></a></li>
+                <li><a href="/login">Ingresa<i class="fa-solid fa-right-to-bracket"></i></a></li>
                 <li><a href="#">Mis compras<i class="fa-solid fa-cart-shopping"></i></a></li>
             </ul>
         </nav>
@@ -82,7 +82,7 @@
             </div>
             <div class="control-form">
                 <label>Foto de perfil</label>
-                <p><input type="file" name="profile-img" accept=".jpg"></p>
+                <p><input type="file" name="profile-img" accept=".jpg" class="input-file"></p>
             </div>
             <div class="control-form">
                 <label for="pass">Contraseña</label>
@@ -92,11 +92,11 @@
                 <label for="confirm-pass">Confirmar contraseña</label>
                 <p><input type="password" name="confirm-pass" id="confirm-pass" required minlength="12"></p>
             </div>
+            <div class="buttons">
+                <button type="submit">ENVIAR</button>
+                <button type="reset">BORRAR</button>
+            </div>
         </form>
-        <div class="buttons">
-            <button type="submit">ENVIAR</button>
-            <button type="reset">BORRAR</button>
-        </div>
     </main>
     
     <footer>
